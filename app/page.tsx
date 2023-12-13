@@ -76,7 +76,6 @@ const Spotify1 = () => {
         width="100%"
         height="400"
         frameBorder="0"
-        allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
@@ -92,7 +91,6 @@ const Spotify2 = () => {
         width="100%"
         height="400"
         frameBorder="0"
-        allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
