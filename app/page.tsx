@@ -95,6 +95,16 @@ export default function Home() {
       <div className="flex flex-col items-center justify-between text-xs font-small text-center pt-6 pb-6">
         &copy; Ravenka 2023
       </div>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        async
+      ></script>
+      <script
+        noModule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        async
+      ></script>
     </main>
   );
 }
