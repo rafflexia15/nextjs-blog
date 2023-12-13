@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+import React from "react";
+import * as ReactDOMClient from "react-dom/client";
+import { LogoNodejs } from "react-ionicons";
+
 const Profile = () => {
   return (
     <div className="w-full md:w-[40%] border border-white shadow-lg bg-gradient-to-r from-cyan-500 to-teal-950 p-14 rounded-2xl flex flex-col gap-4 items-center">
@@ -91,16 +95,6 @@ export default function Home() {
       <div className="flex flex-col items-center justify-between text-xs font-small text-center pt-6 pb-6">
         &copy; Ravenka 2023
       </div>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-        async
-      ></script>
-      <script
-        noModule
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-        async
-      ></script>
     </main>
   );
 }
