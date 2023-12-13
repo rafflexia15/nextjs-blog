@@ -4,6 +4,27 @@ import React from "react";
 import * as ReactDOMClient from "react-dom/client";
 import { LogoNodejs } from "react-ionicons";
 
+import { JSX as LocalJSX } from "@ionic/core";
+import { JSX as IoniconsJSX } from "ionicons";
+import { HTMLAttributes, ReactText } from "react";
+
+type ToReact<T> = {
+  [P in keyof T]?: T[P] &
+    Omit<HTMLAttributes<Element>, "className"> & {
+      class?: string;
+      key?: ReactText;
+    };
+};
+
+declare global {
+  export namespace JSX {
+    interface IntrinsicElements
+      extends ToReact<
+        LocalJSX.IntrinsicElements & IoniconsJSX.IntrinsicElements
+      > {}
+  }
+}
+
 const Profile = () => {
   return (
     <div className="w-full md:w-[40%] border border-white shadow-lg bg-gradient-to-r from-cyan-500 to-teal-950 p-14 rounded-2xl flex flex-col gap-4 items-center">
