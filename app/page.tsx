@@ -1,9 +1,5 @@
 import Image from "next/image";
 
-import React from "react";
-import { render } from "react-dom";
-import { LogoNodejs } from "react-ionicons";
-
 const Profile = () => {
   return (
     <div className="w-full md:w-[40%] border border-white shadow-lg bg-gradient-to-r from-cyan-500 to-teal-950 p-14 rounded-2xl flex flex-col gap-4 items-center">
