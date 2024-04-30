@@ -86,7 +86,14 @@ const Spotify1 = () => {
 const Spotify2 = () => {
   return (
     <div className="w-full md:w-[50%] flex items-center justify-center">
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/42K0zKKOXsdhNBVomvacoT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe 
+        src="https://open.spotify.com/embed/playlist/42K0zKKOXsdhNBVomvacoT?utm_source=generator"
+        width="100%"
+        height="400"
+        frameBorder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+        ></iframe>
     </div>
   );
 };
